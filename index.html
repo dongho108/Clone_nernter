@@ -54,29 +54,79 @@ h1{
   margin: auto;
   text-align: center; */
 }
+
+#school{
+  list-style-image: url("school.png");
+  height:1em;
+  width:1em;
+  font-size : 20px;
+}
+#ebs{
+  list-style-image: url("ebs.png");
+  font-size : 20px;
+}
+#simul{
+  list-style-image: url("simul.png");
+  font-size : 20px;
+}
+#make{
+  list-style-image: url("make.png");
+  font-size : 20px;
+}
+#my{
+  list-style-image: url("my.png");
+  font-size : 20px;
+}
+#board{
+  list-style-image: url("board.png");
+  font-size : 20px;
+}
+#customer{
+  list-style-image: url("customer.png");
+  font-size : 20px;
+}
+
+.sidebar{
+    position: relative;
+    top:10px;
+    width : 30px;
+}
+.menu{
+  position: relative;
+  right : 3px;
+  top:5px;
+  width:20px;
+}
 </style>
 <body>
-  <h1>동호의 너른터 클론페이지</h1>
+  <h1 style="width : 1fr;">동호의 너른터 클론페이지</h1>
   <div id = "top">
     <a href="index.html"><img src="https://www.nernter.com/images/logo-88.png" alt=""></a>
-    <div style="text-align: right">
+    <div style="text-align: right; font-size : 0.5em;">
+      <span><a href="index.html"><img src="image/menual.png" class = "menu">사용법</a></span>
+      <span><a href="index.html"><img src="image/notice.png" class = "menu">공지</a></span>
+      <span><a href="index.html"><img src="image/login.png" class = "menu">로그인</a></span>
+      <span><a href="index.html"><img src="image/create.png" class = "menu">회원가입</a></span>
+    </div>
+    <!-- <div style="text-align: right">
       <a href="index.html">사용법</a>
       <a href="index.html">공지</a>
       <a href="index.html">로그인</a>
       <a href="index.html">회원가입</a>
-    </div>
+    </div> -->
   </div>
 
   <div id = "middle">
-    <ul>
-      <a href="index.html"><li>중, 고등</li></a>
-      <a href="index.html"><li>EBS</li></a>
-      <a href="index.html"><li>모의고사</li></a>
-      <a href="index.html"><li>출제마법사</li></a>
-      <a href="index.html"><li>마이페이지</li></a>
-      <a href="index.html"><li>게시판</li></a>
-      <a href="index.html"><li>고객센터</li></a>
-    </ul>
+    <div>
+      <span><a href="index.html"><img src="image/school.png" class = "sidebar">중, 고등<br></a></span>
+      <span><a href="index.html"><img src="image/ebs.png" class = "sidebar">EBS<br></a></span>
+      <span><a href="index.html"><img src="image/simul.png" class = "sidebar">모의고사<br></a></span>
+      <span><a href="index.html"><img src="image/make.png" class = "sidebar">출제 마법사<br></a></span>
+      <span><a href="index.html"><img src="image/my.png" class = "sidebar">마이페이지<br></a></span>
+      <span><a href="index.html"><img src="image/board.png" class = "sidebar">게시판<br></a></span>
+      <span><a href="index.html"><img src="image/customer.png" class = "sidebar">고객센터</a></span>
+    </div>
+
     <div id = "middle_right">
       <div id = "mrt">
         <div class = "searchWindow">
@@ -91,7 +141,8 @@ h1{
             <input type="submit" value="검색" style="float : right;
             padding-right : 20px;
             padding-left : 20px;
-            background-color:
+            background-color: blue;
+            color : white;
            ">
           </form>
 
@@ -115,13 +166,15 @@ h1{
               <input type="submit" value="초기화" style="float : right;
               padding-right : 20px;
               padding-left : 20px;
+              background-color: gray;
+              color:white;
              ">
             </form>
         </div>
       </div>
       <span style="float : right;"><input type="checkbox"> 최신문제순</span>
         <div>
-          <img src="table_img.png" width="1200px">
+          <img src="image/table_img.png" width="100%">
         </div>
       <div id = "page">
         <a href="index.html"><input type="button" value="<<"></a>
