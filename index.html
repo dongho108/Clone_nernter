@@ -5,45 +5,131 @@
   <meta charset="utf-8">
   <link rel="stylesheet" href="st.css">
 </head>
+<style>
+h1{
+  padding : 30px;
+  margin: 0px;
+  text-align: center;
+  background-Color : black;
+  color : white;
+}
+
+#top{
+  padding: 10px;
+  display : grid;
+  grid-template-columns: 100px 1fr;
+  color : blue;
+  font-size: 1.5em;
+}
+#middle{
+  display: grid;
+  grid-template-columns: 200px 1fr;
+}
+#mrt{
+  display:block;
+  background-color: rgb(244, 250, 255);
+}
+.searchWindow{
+  display : grid;
+  grid-template-columns: 100px 1fr;
+  padding: 10px;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+}
+#page{
+  position: relative;
+  top:0;right:0;bottom:0;left:0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: -webkit-flex;
+  -webkit-align-item: center;
+  -webkit-justify-content: center;
+  /* position: relative;
+  top: 10px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width : 500px;
+  margin: auto;
+  text-align: center; */
+}
+</style>
 <body>
+  <h1>동호의 너른터 클론페이지</h1>
   <div id = "top">
-    <div id = "Ltop"><a href="index.html">너른터</a></div>
-    <div id = "Rtop">사용법 공지 로그인 회원가입</div>
+    <a href="index.html"><img src="https://www.nernter.com/images/logo-88.png" alt=""></a>
+    <div style="text-align: right">
+      <a href="index.html">사용법</a>
+      <a href="index.html">공지</a>
+      <a href="index.html">로그인</a>
+      <a href="index.html">회원가입</a>
+    </div>
   </div>
 
   <div id = "middle">
     <ul>
-      <li>중, 고등</li>
-      <li>EBS</li>
-      <li>모의고사</li>
-      <li>출제마법사</li>
-      <li>마이페이지</li>
-      <li>게시판</li>
-      <li>고객센터</li>
+      <a href="index.html"><li>중, 고등</li></a>
+      <a href="index.html"><li>EBS</li></a>
+      <a href="index.html"><li>모의고사</li></a>
+      <a href="index.html"><li>출제마법사</li></a>
+      <a href="index.html"><li>마이페이지</li></a>
+      <a href="index.html"><li>게시판</li></a>
+      <a href="index.html"><li>고객센터</li></a>
     </ul>
     <div id = "middle_right">
       <div id = "mrt">
-        <div id = "keyword">
+        <div class = "searchWindow">
           <div>키워드검색</div>
-          <div>세부과목</div>
-          <div id="search">검색</div>
+          <form name=f1 style=margin:0; onsubmit="return false;" >
+            <select name="book" id="book" onchange="OnChange();">
+               <option>세부과목</option>
+               <option>출판사</option>
+               <option>저자</option>
+            </select>
+            <input id='subject' type="text">
+            <input type="submit" value="검색" style="float : right;
+            padding-right : 20px;
+            padding-left : 20px;
+            background-color:
+           ">
+          </form>
+
         </div>
-        <div id = "book">
+        <div class = "searchWindow">
           <div>교재선택</div>
-          <div>대상</div>
-          <div id="reset">초기화</div>
+            <form name=f1 style=margin:0; onsubmit="return false;" >
+              <select name="book" id="book" onchange="OnChange();">
+                 <option>전체</option>
+                 <option>중등</option>
+                 <option>교과서</option>
+                 <option>부교재</option>
+                 <option>기타</option>
+                 <option>고등</option>
+                 <option>교과서</option>
+                 <option>모의고사</option>
+                 <option>EBS</option>
+                 <option>부교재</option>
+                 <option>기타</option>
+              </select>
+              <input type="submit" value="초기화" style="float : right;
+              padding-right : 20px;
+              padding-left : 20px;
+             ">
+            </form>
         </div>
       </div>
-      <div id="ordercheck">최신문제순</div>
-        <div id = "p">
-          No, 출판사(저자), 대상, 세부 과목, 문제수, 등록일, 보기<br>
-          1398 YBM(박준언), 교과서, 중학교 3학년, 504, 20/07/09
+      <span style="float : right;"><input type="checkbox"> 최신문제순</span>
+        <div>
+          <img src="table_img.png" width="1200px">
         </div>
       <div id = "page">
-        <div id = "one">1</div>
-        <div id = "two">2</div>
-        <div id = "three">3</div>
-        <div id = "four">4</div>
+        <a href="index.html"><input type="button" value="<<"></a>
+        <a href="index.html"><input type="button" value="1"></a>
+        <a href="index.html"><input type="button" value="2"></a>
+        <a href="index.html"><input type="button" value="3"></a>
+        <a href="index.html"><input type="button" value="4"></a>
+        <a href="index.html"><input type="button" value=">>"></a>
       </div>
     </div>
   </div>
