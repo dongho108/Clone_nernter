@@ -3,100 +3,10 @@
 <head>
   <title>Nureunter-Clone</title>
   <meta charset="utf-8">
-  <link rel="stylesheet" href="st.css">
+  <link rel="stylesheet" href="index.css">
 </head>
 <style>
-h1{
-  padding : 30px;
-  margin: 0px;
-  text-align: center;
-  background-Color : black;
-  color : white;
-}
 
-#top{
-  padding: 10px;
-  display : grid;
-  grid-template-columns: 100px 1fr;
-  color : blue;
-  font-size: 1.5em;
-}
-#middle{
-  display: grid;
-  grid-template-columns: 200px 1fr;
-}
-#mrt{
-  display:block;
-  background-color: rgb(244, 250, 255);
-}
-.searchWindow{
-  display : grid;
-  grid-template-columns: 100px 1fr;
-  padding: 10px;
-  border-top: 1px solid gray;
-  border-bottom: 1px solid gray;
-}
-#page{
-  position: relative;
-  top:0;right:0;bottom:0;left:0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  display: -webkit-flex;
-  -webkit-align-item: center;
-  -webkit-justify-content: center;
-  /* position: relative;
-  top: 10px;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  width : 500px;
-  margin: auto;
-  text-align: center; */
-}
-
-#school{
-  list-style-image: url("school.png");
-  height:1em;
-  width:1em;
-  font-size : 20px;
-}
-#ebs{
-  list-style-image: url("ebs.png");
-  font-size : 20px;
-}
-#simul{
-  list-style-image: url("simul.png");
-  font-size : 20px;
-}
-#make{
-  list-style-image: url("make.png");
-  font-size : 20px;
-}
-#my{
-  list-style-image: url("my.png");
-  font-size : 20px;
-}
-#board{
-  list-style-image: url("board.png");
-  font-size : 20px;
-}
-#customer{
-  list-style-image: url("customer.png");
-  font-size : 20px;
-}
-
-.sidebar{
-    position: relative;
-    top:10px;
-    width : 30px;
-}
-.menu{
-  position: relative;
-  right : 3px;
-  top:5px;
-  width:20px;
-}
 </style>
 <body>
   <h1 style="width : 1fr;">동호의 너른터 클론페이지</h1>
@@ -105,26 +15,21 @@ h1{
     <div style="text-align: right; font-size : 0.5em;">
       <span><a href="index.html"><img src="image/menual.png" class = "menu">사용법</a></span>
       <span><a href="index.html"><img src="image/notice.png" class = "menu">공지</a></span>
-      <span><a href="index.html"><img src="image/login.png" class = "menu">로그인</a></span>
-      <span><a href="index.html"><img src="image/create.png" class = "menu">회원가입</a></span>
+      <span><a href="SignIn.html"><img src="image/login.png" class = "menu">로그인</a></span>
+      <!-- <span><a href="SignUp.html"><img src="image/create.png" class = "menu">회원가입</a></span> -->
     </div>
-    <!-- <div style="text-align: right">
-      <a href="index.html">사용법</a>
-      <a href="index.html">공지</a>
-      <a href="index.html">로그인</a>
-      <a href="index.html">회원가입</a>
-    </div> -->
+
   </div>
 
   <div id = "middle">
-    <div>
-      <span><a href="index.html"><img src="image/school.png" class = "sidebar">중, 고등<br></a></span>
-      <span><a href="index.html"><img src="image/ebs.png" class = "sidebar">EBS<br></a></span>
-      <span><a href="index.html"><img src="image/simul.png" class = "sidebar">모의고사<br></a></span>
-      <span><a href="index.html"><img src="image/make.png" class = "sidebar">출제 마법사<br></a></span>
-      <span><a href="index.html"><img src="image/my.png" class = "sidebar">마이페이지<br></a></span>
-      <span><a href="index.html"><img src="image/board.png" class = "sidebar">게시판<br></a></span>
-      <span><a href="index.html"><img src="image/customer.png" class = "sidebar">고객센터</a></span>
+    <div id = "middle_left">
+      <span><a href="index.html"><img src="image/school.png" class = "sidebar"><span class  = "sidebar_text">중, 고등</span><br></a></span>
+      <span><a href="index.html"><img src="image/ebs.png" class = "sidebar"><span class  = "sidebar_text">EBS</span><br></a></span>
+      <span><a href="index.html"><img src="image/simul.png" class = "sidebar"><span class  = "sidebar_text">모의고사</span><br></a></span>
+      <span><a href="index.html"><img src="image/make.png" class = "sidebar"><span class  = "sidebar_text">출제 마법사</span><br></a></span>
+      <span><a href="index.html"><img src="image/my.png" class = "sidebar"><span class  = "sidebar_text">마이페이지</span><br></a></span>
+      <span><a href="index.html"><img src="image/board.png" class = "sidebar"><span class  = "sidebar_text">게시판</span><br></a></span>
+      <span><a href="index.html"><img src="image/customer.png" class = "sidebar"><span class  = "sidebar_text">고객센터</span></a></span>
     </div>
 
     <div id = "middle_right">

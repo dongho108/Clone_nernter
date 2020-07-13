@@ -1,0 +1,133 @@
+<style>
+#middle li{
+  color : blue;
+  padding : 5px;
+}
+#middle ul{
+
+  margin-top: 0px;
+
+  font-size: 1.5em;
+}
+
+#middle_right{
+  display:block;
+  border: 1px solid gray;
+  height: 650px;
+}
+
+
+#ordercheck{
+  padding: 10px;
+  text-align: right;
+}
+
+@media (max-width:800px){
+  .sidebar_text{
+    display: none;
+  }
+  #middle_left{
+    width : 30px;
+  }
+  #middle{
+    display: grid;
+    grid-template-columns: 30px 1fr;
+  }
+}
+
+
+/* ㅡㅡ여기부터ㅡㅡ */
+h1{
+  padding : 30px;
+  margin: 0px;
+  text-align: center;
+  background-Color : black;
+  color : white;
+}
+
+#top{
+  padding: 10px;
+  display : grid;
+  grid-template-columns: 100px 1fr;
+  color : blue;
+  font-size: 1.5em;
+}
+#middle{
+  display: grid;
+  grid-template-columns: 140px 1fr;
+}
+#mrt{
+  display:block;
+  background-color: rgb(244, 250, 255);
+}
+.searchWindow{
+  display : grid;
+  grid-template-columns: 100px 1fr;
+  padding: 10px;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+}
+#page{
+  position: relative;
+  top:0;right:0;bottom:0;left:0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: -webkit-flex;
+  -webkit-align-item: center;
+  -webkit-justify-content: center;
+  /* position: relative;
+  top: 10px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width : 500px;
+  margin: auto;
+  text-align: center; */
+}
+
+#school{
+  list-style-image: url("school.png");
+  height:1em;
+  width:1em;
+  font-size : 20px;
+}
+#ebs{
+  list-style-image: url("ebs.png");
+  font-size : 20px;
+}
+#simul{
+  list-style-image: url("simul.png");
+  font-size : 20px;
+}
+#make{
+  list-style-image: url("make.png");
+  font-size : 20px;
+}
+#my{
+  list-style-image: url("my.png");
+  font-size : 20px;
+}
+#board{
+  list-style-image: url("board.png");
+  font-size : 20px;
+}
+#customer{
+  list-style-image: url("customer.png");
+  font-size : 20px;
+}
+
+.sidebar{
+    position: relative;
+    top:10px;
+    width : 30px;
+}
+.menu{
+  position: relative;
+  right : 3px;
+  top:5px;
+  width:20px;
+}
+
+
+</style>
